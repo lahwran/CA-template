@@ -11,12 +11,12 @@ if ! [ -e output/server.crt.pem ]; then
     echo "**************************************"
     echo "      Generating server cert..."
     echo "**************************************"
-    ./makecert.sh servers server
+    ./makecert.py servers server
 fi
 
 if ! [ -e output/client.crt.pem ]; then
     echo "**************************************"
     echo "      Generating client cert..."
     echo "**************************************"
-    ./makecert.sh clients client
+    ./makecert.py clients client
 fi
